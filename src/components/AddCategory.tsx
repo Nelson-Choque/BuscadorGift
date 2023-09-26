@@ -30,7 +30,6 @@ export const AddCategory = ({ addCategory }: Props) => {
         type="text"
         onChange={(event) => onInputChange(event)}
       />
-      ;
     </form>
   );
 };

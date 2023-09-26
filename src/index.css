@@ -3,7 +3,8 @@
   background-color: rgb(234, 234, 234);
 }
 
-body {
+* {
+  box-sizing: border-box;
 }
 
 input {
@@ -22,8 +23,8 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
+  margin: 2rem 0;
 }
 
 .card-grid {
