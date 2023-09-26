@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GridGift } from "./components/GridGift";
 
 export function AppGitExpert() {
   const [categories, setCategories] = useState(["one punch man"]);
@@ -15,7 +16,7 @@ export function AppGitExpert() {
       return "";
     }
 
-    setCategories([...categories, newCategory]);
+    setCategories([newCategory, ...categories]);
   };
 
   return (
@@ -23,8 +24,8 @@ export function AppGitExpert() {
       <h2>Buscador de Gifts</h2>
       <AddCategory addCategory={addCategory} />
       <ul>
-        {categories.map((categorie) => (
-          <li key={categorie}>{categorie}</li>
+        {categories.map((category) => (
+          <GridGift key={category} category={category} />
         ))}
       </ul>
     </div>
