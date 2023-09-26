@@ -23,11 +23,11 @@ export function AppGitExpert() {
     <div>
       <h2>Buscador de Gifts</h2>
       <AddCategory addCategory={addCategory} />
-      <ul>
+      <div>
         {categories.map((category) => (
           <GridGift key={category} category={category} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
